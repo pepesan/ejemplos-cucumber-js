@@ -11,3 +11,8 @@ $ npx cucumber-js
 * editar el .env para añadir el token de publicación
 ## Ejecución de pruebas y publicación
 $  ./run_cucumber.sh
+
+## Ejecución de sólo una feature
+$ npx cucumber-js ./features/castellano.feature
+## Ejecución de sólo un escenario de una feature
+$ npx cucumber-js ./features/simple_math.feature:12
