@@ -1,0 +1,84 @@
+{
+  "id": "e97ae7a9-7b3a-4576-81ce-4b2564577e32",
+  "version": "2.0",
+  "name": "wikipedia",
+  "url": "https://es.wikipedia.org",
+  "tests": [{
+    "id": "e4d7ea57-ed8e-40d5-9211-219094737097",
+    "name": "software",
+    "commands": [{
+      "id": "4152b0dc-e73f-489a-b50c-f178d1ac99ce",
+      "comment": "",
+      "command": "open",
+      "target": "/wiki/Wikipedia:Portada",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e552a504-646d-4177-ad14-5138c1a517b1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=Bienvenidos_a_Wikipedia,",
+      "targets": [
+        ["id=Bienvenidos_a_Wikipedia,", "id"],
+        ["css=#Bienvenidos_a_Wikipedia\\,", "css:finder"],
+        ["xpath=//span[@id='Bienvenidos_a_Wikipedia,']", "xpath:attributes"],
+        ["xpath=//div[@id='mw-content-text']/div/div/div/h1/span[2]", "xpath:idRelative"],
+        ["xpath=//h1/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Bienvenidos a Wikipedia,')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecb73545-2cac-48cf-9628-a71efac09fda",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "software"
+    }, {
+      "id": "9541d8ec-597c-42e7-bc49-899317c218b8",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchButton",
+      "targets": [
+        ["id=searchButton", "id"],
+        ["name=go", "name"],
+        ["css=#searchButton", "css:finder"],
+        ["xpath=//input[@id='searchButton']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84ecfafb-12f4-46e3-86b8-5fca074f1aa7",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=firstHeading",
+      "targets": [
+        ["id=firstHeading", "id"],
+        ["css=#firstHeading", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Software')]", "xpath:innerText"]
+      ],
+      "value": "Software"
+    }]
+  }],
+  "suites": [{
+    "id": "24749f9a-9aee-4e0a-98f7-7c69d6a89368",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e4d7ea57-ed8e-40d5-9211-219094737097"]
+  }],
+  "urls": ["https://es.wikipedia.org/"],
+  "plugins": []
+}
