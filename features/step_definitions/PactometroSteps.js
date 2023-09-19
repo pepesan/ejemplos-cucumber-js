@@ -8,12 +8,12 @@ setDefaultTimeout(60 * 1000);
 let driver
 let vars
 
-Before({tags: "@selenium"},async function () {
+Before(async function () {
     driver = await new Builder().forBrowser('chrome').build()
     vars = {}
     await driver.manage().setTimeouts( { implicit: 15000 } );
 });
-After({tags: "@selenium"},function () {
+After(function () {
     // Assuming this.driver is a selenium webdriver
     return driver.quit();
 });
@@ -30,4 +30,13 @@ Then(/^compruebo los ceros$/, async function () {
     // 4 | assertText | id=num-noes | 0
     assert(await driver.findElement(By.id("num-noes")).getText() == "0")
     // await driver.quit();
+});
+Then(/^existe el boton de reset$/, async function () {
+    // assert(await driver.findElement(By.css("button#reset")).getText() == "Reset")
+});
+Then(/^existe la caja de Partidos$/, async function () {
+    // assert(await driver.findElement(By.id("reset")).getText() == "Reset")
+});
+Then(/^existen los botones de los partidos$/, async function () {
+
 });

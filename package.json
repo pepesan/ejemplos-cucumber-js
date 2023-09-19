@@ -12,6 +12,7 @@
   "devDependencies": {
     "@cucumber/cucumber": "^7.3.2",
     "chai": "^4.3.6",
+    "cucumber-junit": "^1.7.1",
     "mocha": "10.2.0",
     "selenium-webdriver": "^4.1.2"
   }

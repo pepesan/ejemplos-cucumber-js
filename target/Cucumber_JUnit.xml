@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="multiple-site-support;increment-by-one" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="features/background.feature">
+            </property>
+        </properties>
+        <testcase name="Given a variable set to 1" classname="multiple-site-support;increment-by-one">
+        </testcase>
+        <testcase name="When I increment the variable by 1" classname="multiple-site-support;increment-by-one">
+        </testcase>
+        <testcase name="Then the variable should contain 2" classname="multiple-site-support;increment-by-one">
+        </testcase>
+    </testsuite>
+    <testsuite name="multiple-site-support;increment-by-two" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="features/background.feature">
+            </property>
+        </properties>
+        <testcase name="Given a variable set to 1" classname="multiple-site-support;increment-by-two">
+        </testcase>
+        <testcase name="When I increment the variable by 2" classname="multiple-site-support;increment-by-two">
+        </testcase>
+        <testcase name="Then the variable should contain 3" classname="multiple-site-support;increment-by-two" time="0.001">
+        </testcase>
+    </testsuite>
+    <testsuite name="calculadora;suma" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="features/calculadora.feature">
+            </property>
+        </properties>
+        <testcase name="Given cargo el objeto" classname="calculadora;suma">
+        </testcase>
+        <testcase name="When ejecuto la suma de 1 y 2" classname="calculadora;suma">
+        </testcase>
+        <testcase name="Then el resultado es 3" classname="calculadora;suma">
+        </testcase>
+    </testsuite>
+    <testsuite name="carga-inicial;" tests="5" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="features/carga-pactometro.feature">
+            </property>
+        </properties>
+        <testcase name="Given abro el pactometro" classname="carga-inicial;" time="0.117">
+        </testcase>
+        <testcase name="Then compruebo los ceros" classname="carga-inicial;" time="0.048">
+        </testcase>
+        <testcase name="And existe el boton de reset" classname="carga-inicial;">
+        </testcase>
+        <testcase name="And existe la caja de Partidos" classname="carga-inicial;">
+        </testcase>
+        <testcase name="And existen los botones de los partidos" classname="carga-inicial;">
+        </testcase>
+    </testsuite>
+    <testsuite name="funcionalidad-x;easy-maths" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="features/castellano.feature">
+            </property>
+        </properties>
+        <testcase name="Dada a variable set to 1" classname="funcionalidad-x;easy-maths">
+        </testcase>
+        <testcase name="Cuando I increment the variable by 1" classname="funcionalidad-x;easy-maths">
+        </testcase>
+        <testcase name="Entonces the variable should contain 2" classname="funcionalidad-x;easy-maths">
+        </testcase>
+    </testsuite>
+    <testsuite name="navegacion;navega" tests="4" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="features/navegacion.feature">
+            </property>
+        </properties>
+        <testcase name="Given abro el navegador" classname="navegacion;navega" time="2.937">
+        </testcase>
+        <testcase name="When relleno el formulario" classname="navegacion;navega" time="0.054">
+        </testcase>
+        <testcase name="And pulso en buscar" classname="navegacion;navega" time="2.679">
+        </testcase>
+        <testcase name="Then compruebo el texto" classname="navegacion;navega" time="0.024">
+        </testcase>
+    </testsuite>
+    <testsuite name="navegacion;navega" tests="2" failures="0" skipped="0">
+        <properties>
+            <property name="@selenium" value="true">
+            </property>
+            <property name="URI" value="features/pactometro.feature">
+            </property>
+        </properties>
+        <testcase name="Given abro el pactometro" classname="navegacion;navega" time="0.116">
+        </testcase>
+        <testcase name="Then compruebo los ceros" classname="navegacion;navega" time="0.045">
+        </testcase>
+    </testsuite>
+    <testsuite name="simple-maths;easy-maths" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="features/simple_math.feature">
+            </property>
+        </properties>
+        <testcase name="Given a variable set to 1" classname="simple-maths;easy-maths">
+        </testcase>
+        <testcase name="When I increment the variable by 1" classname="simple-maths;easy-maths">
+        </testcase>
+        <testcase name="Then the variable should contain 2" classname="simple-maths;easy-maths">
+        </testcase>
+    </testsuite>
+    <testsuite name="simple-maths;much-more-complex-stuff" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="features/simple_math.feature">
+            </property>
+        </properties>
+        <testcase name="Given a variable set to 100" classname="simple-maths;much-more-complex-stuff">
+        </testcase>
+        <testcase name="When I increment the variable by 5" classname="simple-maths;much-more-complex-stuff">
+        </testcase>
+        <testcase name="Then the variable should contain 105" classname="simple-maths;much-more-complex-stuff">
+        </testcase>
+    </testsuite>
+    <testsuite name="simple-maths;much-more-complex-stuff" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="features/simple_math.feature">
+            </property>
+        </properties>
+        <testcase name="Given a variable set to 99" classname="simple-maths;much-more-complex-stuff">
+        </testcase>
+        <testcase name="When I increment the variable by 1234" classname="simple-maths;much-more-complex-stuff">
+        </testcase>
+        <testcase name="Then the variable should contain 1333" classname="simple-maths;much-more-complex-stuff">
+        </testcase>
+    </testsuite>
+    <testsuite name="simple-maths;much-more-complex-stuff" tests="3" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="features/simple_math.feature">
+            </property>
+        </properties>
+        <testcase name="Given a variable set to 12" classname="simple-maths;much-more-complex-stuff" time="0.001">
+        </testcase>
+        <testcase name="When I increment the variable by 5" classname="simple-maths;much-more-complex-stuff">
+        </testcase>
+        <testcase name="Then the variable should contain 17" classname="simple-maths;much-more-complex-stuff">
+        </testcase>
+    </testsuite>
+</testsuites>

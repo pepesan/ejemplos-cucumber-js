@@ -16,3 +16,18 @@ $  ./run_cucumber.sh
 $ npx cucumber-js ./features/castellano.feature
 ## Ejecución de sólo un escenario de una feature
 $ npx cucumber-js ./features/simple_math.feature:12
+
+## Reporting
+### Salida en JSON
+´´´shell
+npx cucumber-js --format json > target/results.json
+´´´
+### Salida en XML Junit
+para ello es necesario usar una biblioteca e instalarla como dependencia de desarrollo:
+´´´shell
+npm install --save-dev cucumber-junit
+´´´
+Después podemos generar el json y transformarlo a formato XML Junit
+´´´shell
+npx cucumber-js --format json > target/results.json | node_modules/.bin/cucumber-junit > target/Cucumber_JUnit.xml
+´´´
