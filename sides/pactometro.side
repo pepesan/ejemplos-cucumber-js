@@ -1,0 +1,453 @@
+{
+  "id": "f7fe58cf-2b26-4ac7-b240-d0083e33cfd2",
+  "version": "2.0",
+  "name": "pactometro",
+  "url": "https://cursosdedesarrollo.com/pactometro/",
+  "tests": [{
+    "id": "7f89e54c-cfe2-4e37-850a-8d67d1966519",
+    "name": "ceros",
+    "commands": [{
+      "id": "656c1ddc-7d67-4479-9101-3b2acf69990b",
+      "comment": "",
+      "command": "open",
+      "target": "/pactometro/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44e29c16-8d9a-4655-b8b5-8999a562ccb5",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=num-sies",
+      "targets": [
+        ["id=num-sies", "id"],
+        ["css=#num-sies", "css:finder"],
+        ["xpath=//h2[@id='num-sies']", "xpath:attributes"],
+        ["xpath=//div[@id='sies']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'0')]", "xpath:innerText"]
+      ],
+      "value": "0"
+    }, {
+      "id": "75a8178b-c6cb-4b13-a282-d6f8286517f2",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=num-abst",
+      "targets": [
+        ["id=num-abst", "id"],
+        ["css=#num-abst", "css:finder"],
+        ["xpath=//h2[@id='num-abst']", "xpath:attributes"],
+        ["xpath=//div[@id='abst']/h2", "xpath:idRelative"],
+        ["xpath=//div[2]/h2", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "0fc5e450-c975-4bda-a1ee-3aad9a01f4e5",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=num-noes",
+      "targets": [
+        ["id=num-noes", "id"],
+        ["css=#num-noes", "css:finder"],
+        ["xpath=//h2[@id='num-noes']", "xpath:attributes"],
+        ["xpath=//div[@id='noes']/h2", "xpath:idRelative"],
+        ["xpath=//div[3]/h2", "xpath:position"]
+      ],
+      "value": "0"
+    }]
+  }, {
+    "id": "14fde7c5-b0de-4156-9ae2-a7916d8583ba",
+    "name": "botones",
+    "commands": [{
+      "id": "b43ac545-4e62-4966-8e05-6d45bd0b940f",
+      "comment": "",
+      "command": "open",
+      "target": "https://cursosdedesarrollo.com/pactometro/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10751f68-58a6-4c56-85ab-9754ba4855f0",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=reset",
+      "targets": [
+        ["id=reset", "id"],
+        ["css=#reset", "css:finder"],
+        ["xpath=//button[@id='reset']", "xpath:attributes"],
+        ["xpath=//div[@id='botones']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Reset')]", "xpath:innerText"]
+      ],
+      "value": "Reset"
+    }]
+  }, {
+    "id": "da7c7a76-b46f-42fc-a856-11bb243b9b9d",
+    "name": "resultados",
+    "commands": [{
+      "id": "b4356fb7-9ebc-4f55-b6a5-568025b78b3b",
+      "comment": "",
+      "command": "open",
+      "target": "https://cursosdedesarrollo.com/pactometro/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "724bfa2f-7054-41c3-84f0-a2215c31127a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1324x1484",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "887fff0a-747e-43d6-b43f-0d90b507d7d9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=part-PP",
+      "targets": [
+        ["id=part-PP", "id"],
+        ["css=#part-PP", "css:finder"],
+        ["xpath=//button[@id='part-PP']", "xpath:attributes"],
+        ["xpath=//div[@id='partidos']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'137')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5aa4d96-4c1f-4e34-96fd-52d457d392c2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=part-PSOE",
+      "targets": [
+        ["id=part-PSOE", "id"],
+        ["css=#part-PSOE", "css:finder"],
+        ["xpath=//button[@id='part-PSOE']", "xpath:attributes"],
+        ["xpath=//div[@id='partidos']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'121')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0dc7a5f0-7f76-46ec-9112-bb3f9cfbe418",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#part-PP > h2",
+      "targets": [
+        ["css=#part-PP > h2", "css:finder"],
+        ["xpath=//button[@id='part-PP']/h2", "xpath:idRelative"],
+        ["xpath=//button/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'137')]", "xpath:innerText"]
+      ],
+      "value": "137"
+    }, {
+      "id": "05f5e7bd-fccf-461b-8f40-cd36042e198a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#part-PSOE > h2",
+      "targets": [
+        ["css=#part-PSOE > h2", "css:finder"],
+        ["xpath=//button[@id='part-PSOE']/h2", "xpath:idRelative"],
+        ["xpath=//button[2]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'121')]", "xpath:innerText"]
+      ],
+      "value": "121"
+    }]
+  }, {
+    "id": "bca907f5-6a65-48c0-a23b-5fa540aec416",
+    "name": "deshabilita",
+    "commands": [{
+      "id": "1a54ffec-296b-44b7-a991-7a653f1f86fa",
+      "comment": "",
+      "command": "open",
+      "target": "https://cursosdedesarrollo.com/pactometro/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf8035c9-8d34-4b5f-8db4-bcb3efd9a0c3",
+      "comment": "",
+      "command": "click",
+      "target": "id=part-PP",
+      "targets": [
+        ["id=part-PP", "id"],
+        ["css=#part-PP", "css:finder"],
+        ["xpath=//button[@id='part-PP']", "xpath:attributes"],
+        ["xpath=//div[@id='partidos']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'137')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c1b6a1d-7f59-4a54-9941-6ce6e402ab61",
+      "comment": "",
+      "command": "assertNotEditable",
+      "target": "id=part-PP",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "16494134-0969-4111-b526-eeafc6d22c12",
+    "name": "cuenta-noes",
+    "commands": [{
+      "id": "6ae19e8d-b3ac-45fa-9711-212f94f26c5c",
+      "comment": "",
+      "command": "open",
+      "target": "https://cursosdedesarrollo.com/pactometro/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de9404fb-6bcc-46b2-8d95-d0afb661a326",
+      "comment": "",
+      "command": "click",
+      "target": "id=part-PP",
+      "targets": [
+        ["id=part-PP", "id"],
+        ["css=#part-PP", "css:finder"],
+        ["xpath=//button[@id='part-PP']", "xpath:attributes"],
+        ["xpath=//div[@id='partidos']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'137')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fa8ff85-6657-423e-9851-cc90d01c978a",
+      "comment": "",
+      "command": "click",
+      "target": "id=noes",
+      "targets": [
+        ["id=noes", "id"],
+        ["css=#noes", "css:finder"],
+        ["xpath=//div[@id='noes']", "xpath:attributes"],
+        ["xpath=//div[@id='cabecera']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5f2a877-16cd-4b37-9c61-f0bcde877190",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=num-noes",
+      "targets": [
+        ["id=num-noes", "id"],
+        ["css=#num-noes", "css:finder"],
+        ["xpath=//h2[@id='num-noes']", "xpath:attributes"],
+        ["xpath=//div[@id='noes']/h2", "xpath:idRelative"],
+        ["xpath=//div[3]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'137')]", "xpath:innerText"]
+      ],
+      "value": "137"
+    }]
+  }, {
+    "id": "209942d3-7020-485a-bb33-78ea8c5a0795",
+    "name": "cuenta-sies",
+    "commands": [{
+      "id": "79844115-8cd2-4ae8-b449-cea80af3a0a1",
+      "comment": "",
+      "command": "open",
+      "target": "https://cursosdedesarrollo.com/pactometro/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "275ee028-32fc-4ff2-87ae-c8b346b0e184",
+      "comment": "",
+      "command": "click",
+      "target": "id=part-PSOE",
+      "targets": [
+        ["css=#part-PSOE > img", "css:finder"],
+        ["xpath=//button[@id='part-PSOE']/img", "xpath:idRelative"],
+        ["xpath=//button[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24f9a5f2-cb36-41d3-8dca-b3486d7dfb55",
+      "comment": "",
+      "command": "click",
+      "target": "id=sies",
+      "targets": [
+        ["id=sies", "id"],
+        ["css=#sies", "css:finder"],
+        ["xpath=//div[@id='sies']", "xpath:attributes"],
+        ["xpath=//div[@id='cabecera']/div", "xpath:idRelative"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d891016-f587-48b6-970d-03fb897c52a9",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=num-sies",
+      "targets": [
+        ["id=num-sies", "id"],
+        ["css=#num-sies", "css:finder"],
+        ["xpath=//h2[@id='num-sies']", "xpath:attributes"],
+        ["xpath=//div[@id='sies']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'121')]", "xpath:innerText"]
+      ],
+      "value": "121"
+    }]
+  }, {
+    "id": "0490c993-cbc1-4ba0-937c-fa1dae53dfa6",
+    "name": "cuenta-abs",
+    "commands": [{
+      "id": "a386afc0-c2aa-4dd1-8ca4-64cc501b9d63",
+      "comment": "",
+      "command": "open",
+      "target": "https://cursosdedesarrollo.com/pactometro/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf373c5e-1c6b-45c2-9a4a-d2d7494b139d",
+      "comment": "",
+      "command": "click",
+      "target": "id=part-Sumar",
+      "targets": [
+        ["id=part-Sumar", "id"],
+        ["css=#part-Sumar", "css:finder"],
+        ["xpath=//button[@id='part-Sumar']", "xpath:attributes"],
+        ["xpath=//div[@id='partidos']/button[4]", "xpath:idRelative"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'31')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8a031da-2a60-416f-be0c-33dd2a303a3e",
+      "comment": "",
+      "command": "assertNotEditable",
+      "target": "id=part-Sumar",
+      "targets": [
+        ["id=part-Sumar", "id"],
+        ["css=#part-Sumar", "css:finder"],
+        ["xpath=//button[@id='part-Sumar']", "xpath:attributes"],
+        ["xpath=//div[@id='partidos']/button[4]", "xpath:idRelative"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'31')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a0d4f06-7e38-4888-bc15-00ae4369de04",
+      "comment": "",
+      "command": "click",
+      "target": "id=part-PNV",
+      "targets": [
+        ["id=part-PNV", "id"],
+        ["css=#part-PNV", "css:finder"],
+        ["xpath=//button[@id='part-PNV']", "xpath:attributes"],
+        ["xpath=//div[@id='partidos']/button[8]", "xpath:idRelative"],
+        ["xpath=//button[8]", "xpath:position"],
+        ["xpath=//button[contains(.,'5')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ec96a77-4ecf-45e8-b563-87eff00131dd",
+      "comment": "",
+      "command": "assertNotEditable",
+      "target": "id=part-PNV",
+      "targets": [
+        ["id=part-PNV", "id"],
+        ["css=#part-PNV", "css:finder"],
+        ["xpath=//button[@id='part-PNV']", "xpath:attributes"],
+        ["xpath=//div[@id='partidos']/button[8]", "xpath:idRelative"],
+        ["xpath=//button[8]", "xpath:position"],
+        ["xpath=//button[contains(.,'5')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "96a5ec6c-56bc-4af7-9b16-43e1dcd30313",
+      "comment": "",
+      "command": "click",
+      "target": "css=#abst > .titulo-centrado:nth-child(1)",
+      "targets": [
+        ["css=#abst > .titulo-centrado:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='abst']/h1", "xpath:idRelative"],
+        ["xpath=//div[2]/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Abstenciones')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0389ced7-b295-4c78-883c-cfbd3061761f",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=num-abst",
+      "targets": [
+        ["id=num-abst", "id"],
+        ["css=#num-abst", "css:finder"],
+        ["xpath=//h2[@id='num-abst']", "xpath:attributes"],
+        ["xpath=//div[@id='abst']/h2", "xpath:idRelative"],
+        ["xpath=//div[2]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'36')]", "xpath:innerText"]
+      ],
+      "value": "36"
+    }]
+  }, {
+    "id": "91f3bc72-11d0-4896-b852-0c17c60cad87",
+    "name": "oculta",
+    "commands": [{
+      "id": "b493bf28-afff-48d7-bbe9-46a11e4a4027",
+      "comment": "",
+      "command": "open",
+      "target": "https://cursosdedesarrollo.com/pactometro/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39f621d0-7f62-489f-9c4c-e7954a3b8c73",
+      "comment": "",
+      "command": "click",
+      "target": "id=part-PP",
+      "targets": [
+        ["id=part-PP", "id"],
+        ["css=#part-PP", "css:finder"],
+        ["xpath=//button[@id='part-PP']", "xpath:attributes"],
+        ["xpath=//div[@id='partidos']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'137')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6d6c792-4a42-4a9b-a5e0-d1c5f3d3023c",
+      "comment": "",
+      "command": "click",
+      "target": "id=num-sies",
+      "targets": [
+        ["id=num-sies", "id"],
+        ["css=#num-sies", "css:finder"],
+        ["xpath=//h2[@id='num-sies']", "xpath:attributes"],
+        ["xpath=//div[@id='sies']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'0')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "37c6ac82-8581-4070-a02f-9a6d89c4e3f0",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=num-sies",
+      "targets": [
+        ["id=num-sies", "id"],
+        ["css=#num-sies", "css:finder"],
+        ["xpath=//h2[@id='num-sies']", "xpath:attributes"],
+        ["xpath=//div[@id='sies']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'137')]", "xpath:innerText"]
+      ],
+      "value": "137"
+    }, {
+      "id": "2b1586e9-aed0-4235-8000-6312bf1e8976",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#sies img",
+      "targets": [
+        ["css=img:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='sies']/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "da4af080-dc26-4d45-a3ee-2ebc768e5f2e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7f89e54c-cfe2-4e37-850a-8d67d1966519"]
+  }],
+  "urls": ["https://cursosdedesarrollo.com/", "https://cursosdedesarrollo.com/pactometro/"],
+  "plugins": []
+}

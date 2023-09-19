@@ -7,6 +7,8 @@ class CustomWorld {
         this.variable = 0;
         this.calculadora = calculadora.calculadora;
         this.resultado = 0;
+        this.driver;
+        this.vars;
     }
 
     getCalculadora(){

@@ -1,4 +1,4 @@
-const {Given, When, Then} = require("@cucumber/cucumber");
+const {Given, When, Then, Before, After} = require("@cucumber/cucumber");
 const assert = require('assert')
 const {Builder, By} = require("selenium-webdriver");
 var {setDefaultTimeout} = require('@cucumber/cucumber');
@@ -7,11 +7,21 @@ setDefaultTimeout(60 * 1000);
 // this.timeout(30000)
 let driver
 let vars
-Given(/^abro el navegador$/, async function () {
 
+Before(async function () {
     driver = await new Builder().forBrowser('chrome').build()
     vars = {}
     await driver.manage().setTimeouts( { implicit: 15000 } );
+});
+After(function () {
+    // Assuming this.driver is a selenium webdriver
+    return driver.quit();
+});
+Given(/^abro el navegador$/, async function () {
+
+    // driver = await new Builder().forBrowser('chrome').build()
+    // vars = {}
+    // await driver.manage().setTimeouts( { implicit: 15000 } );
     // Test name: navegacion
     // Step # | name | target | value
     // 1 | open | / |
@@ -30,5 +40,5 @@ When(/^pulso en buscar$/, async function () {
 Then(/^compruebo el texto$/, async function () {
     // 5 | assertText | css=header.page-header h1 | Search results for: nas
     assert(await driver.findElement(By.css("header.page-header h1")).getText() == "Search results for: nas")
-    await driver.quit();
+    // await driver.quit();
 });
