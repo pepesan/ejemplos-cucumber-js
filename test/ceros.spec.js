@@ -17,7 +17,7 @@ describe('ceros', function() {
     // Test name: ceros
     // Step # | name | target | value
     // 1 | open | /pactometro/ |
-    await driver.get("https://cursosdedesarrollo.com/pactometro/")
+    await driver.get("https://pactometro.cursosdedesarrollo.com/")
     // 2 | assertText | id=num-sies | 0
     assert(await driver.findElement(By.id("num-sies")).getText() == "0")
     // 3 | assertText | id=num-abst | 0

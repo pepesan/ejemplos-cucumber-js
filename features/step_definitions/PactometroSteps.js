@@ -20,7 +20,7 @@ After(function () {
 
 Given(/^abro el pactometro$/, async function () {
 
-    await driver.get("https://cursosdedesarrollo.com/pactometro/")
+    await driver.get("https://pactometro.cursosdedesarrollo.com/")
 });
 Then(/^compruebo los ceros$/, async function () {
     // 2 | assertText | id=num-sies | 0

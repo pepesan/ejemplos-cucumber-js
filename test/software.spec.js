@@ -24,9 +24,9 @@ describe('software', function() {
       assert(elements.length)
     }
     // 3 | type | id=searchInput | software
-    await driver.findElement(By.id("searchInput")).sendKeys("software")
+    await driver.findElement(By.css(".cdx-text-input__input")).sendKeys("software")
     // 4 | click | id=searchButton | 
-    await driver.findElement(By.id("searchButton")).click()
+    await driver.findElement(By.css(".cdx-search-input__end-button")).click()
     // 5 | assertText | id=firstHeading | Software
     assert(await driver.findElement(By.id("firstHeading")).getText() == "Software")
   })
