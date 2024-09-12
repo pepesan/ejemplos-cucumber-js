@@ -32,11 +32,12 @@ Then(/^compruebo los ceros$/, async function () {
     // await driver.quit();
 });
 Then(/^existe el boton de reset$/, async function () {
-    // assert(await driver.findElement(By.css("button#reset")).getText() == "Reset")
+    assert(await driver.findElement(By.css("button#reset")).getText() == "Reset")
 });
 Then(/^existe la caja de Partidos$/, async function () {
-    // assert(await driver.findElement(By.id("reset")).getText() == "Reset")
+    assert(await driver.findElement(By.id("partidos")))
 });
 Then(/^existen los botones de los partidos$/, async function () {
-
+    let element = await driver.findElement(By.css("#part-PP h2"));
+    assert(await element.getText() == "137")
 });
